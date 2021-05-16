@@ -1,0 +1,107 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.nav {
+    border-bottom: 1px solid #EAEAEB;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+}
+
+.navbar-brand{
+    position: sticky;
+    text-decoration: none;
+    color: #a3564f;
+    letter-spacing: 4px;
+    font-size: 20px;
+    float: left;
+    font-family: 'Pacifico', cursive;
+    padding: 0px 10px;
+    z-index: 4;
+}
+
+.navbar-brand:hover{
+    font-size: 22px;
+    transition: 0.2s ease-in;
+}
+
+.menu {
+    position: absolute;
+    right: 5px;
+    margin: 0 30px 0 0;
+    z-index: 3;
+    background-color: white;
+}
+.menu a {
+    clear: both;
+    text-decoration: none;
+    color: gray;
+    margin: 0 10px;
+    line-height: 70px;
+    padding: 5px 10px;
+    font-family: "Baloo 2", cursive;
+    z-index: 3;
+}
+
+.menu a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    transition: 0.2s ease-in;
+    border: none;
+  }
+
+label {
+  position: sticky;
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+    z-index: 5;
+}
+#toggle {
+    display: none;
+}
+
+
+@media only screen and (max-width: 965px) {
+    label {
+        right: 3px;
+        position: absolute;
+        margin: 0 40px 0 0;
+        font-size: 26px;
+        line-height: 70px;
+        display: none;
+        width: 100%;
+        z-index: 5;
+    }
+    .menu {
+        position: static;
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+        z-index: 6;
+     
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
